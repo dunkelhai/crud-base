@@ -22,7 +22,7 @@ abstract class AbstractCrudBaseService<T extends BaseModel, R extends BaseReposi
 
 	@Override
 	public T upsert(T object) {
-		return object.getId() == null ? save(object) : update(object);
+		return object.getId() == null ? save(object) : repository.existsById(object.getId()) ? update(object) : save(object);
 	}
 
 	protected void beforeSave(T object) {
