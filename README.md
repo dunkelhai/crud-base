@@ -1,9 +1,9 @@
-### CRUD Base for Java Application
+## CRUD Base for Java Application
 
 
-##This project contains a basic crud structure that can be used in many projects.
+### This project contains a basic crud structure that can be used in many projects.
 
-##How to use
+#### How to use
 
 1. Create a object that implement BaseModel
 
